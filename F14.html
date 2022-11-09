@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Forest</title>
+</head>
+
+<audio id="divAudio" controls>
+    <source src="media/ambient/magic+steps.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var vAudio = document.getElementById("divAudio");
+    var hasInit = false;
+    function playMusic()
+    {
+      if(!hasInit)
+      {
+        hasInit = true;
+        vAudio.play();
+      }
+    }
+  </script>
+
+<div class="div" onmousemove="playMusic()">
+
+<body>
+    
+
+
+    <table width="1350" height="700" border="1" align="center" bgcolor="#38b503">
+        <tr height="100">
+            <td colspan="7" class="caption" align="center" colspan="2">
+                <h2>Загадка</h2>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="4" class="media">
+                <p align="center">
+                    <img src="media/images/F14.png" alt="Ошибка загрузки" width="720" height="360">
+                </p>
+            </td>
+            <td class="text" colspan="3">
+                <p>
+                    Перед вами - стол с зельями. Впереди лес смыкается, так что дальше не пройти. Вы оглядываетесь, но тропа, по которой вы шли, исчезла.<br> 
+                    На столе лежит записка:<br><br>
+                </p>
+                <p align="center">
+                    <i>
+                    Впереди тупик, то же позади,<br>
+                    Но две из нас помогут, ты только их найди.<br>
+                    Одна вперед отправит, еще одна — назад,<br>
+                    В двух — вино всего лишь, а еще в трех — яд.<br>
+                    Ты хочешь здесь остаться на долгие века?<br>
+                    Тогда ищи — к тому же подсказка тебе дана.<br>
+                    Во-первых, как бы ловко ни скрывался яд,<br>
+                    Найти его несложно — от вина левый ряд.<br>
+                    Второе — в крайних бутылях налито не одно и то ж,<br>
+                    Но если вперед тебе надо, помощи зря ты ждешь.<br>
+                    Затем ни в большой, ни в малой смерти ты не найдешь,<br>
+                    А если из второй слева и второй справа глотнешь,<br>
+                    сам убедишься — налито одно и то же в них,<br>
+                    Хотя на взгляд они разные, но это уже в-четвертых.<br>
+                </i>
+                </p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="1"> 
+                <a href="H15.html">Выпить из белой бутылочки</a>
+            </td>
+            <td> 
+                <a href="H16.html">Выпить из красной бутылочки</a>
+            </td>
+            <td> 
+                <a href="H17.html">Выпить из голубой бутылочки</a>
+            </td>
+            <td> 
+                <a href="H15.html">Выпить из жёлтой бутылочки</a>
+            </td>
+            <td> 
+                <a href="H15.html">Выпить из зелёной бутылочки</a>
+            </td>
+            <td>
+                <a href="H16.html">Выпить из чёрной бутылочки</a>
+            </td>
+            <td>
+                <a href="H14.html">Выпить из фиолетовой бутылочки</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</div>
+
+<style>
+    .div {
+            width: 100%;
+            height: 100vh;
+            background-color: #0d9d11;
+    }
+</style>
+
+
+</html>

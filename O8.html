@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Forest</title>
+</head>
+
+<audio id="divAudio" controls>
+    <source src="media/ambient/forest+knight.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var vAudio = document.getElementById("divAudio");
+    var hasInit = false;
+    function playMusic()
+    {
+      if(!hasInit)
+      {
+        hasInit = true;
+        vAudio.play();
+      }
+    }
+  </script>
+
+<div class="div" onmousemove="playMusic()">
+
+<body>
+    
+
+
+    <table width="1350" height="700" border="1" align="center" bgcolor="#38b503">
+        <tr height="100">
+            <td class="caption" align="center" colspan="7">
+                <h2>Ворота</h2>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td class="media" colspan="3">
+                <p align="center">
+                    <img src="media/images/K8.png" alt="Ошибка загрузки" width="720" height="360">
+                </p>
+            </td>
+            <td class="text" rowspan="2" colspan="" align="center">
+                <p>
+                    Что же делать?
+                <br>
+                <br>
+                <br>
+                <i> Инвентарь:
+                <br>
+                1x Амулет
+                </i>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="1" width="365"> 
+                <a href="O6.html">Выбить ворота</a>
+            </td>
+            <td align="center" colspan="1" width="365"> 
+                <a href="Q8.html">Взглянуть на рыцаря</a>
+            </td>
+            <td align="center" colspan="1" width="365"> 
+                <a href="P10.html">Вставить амулет в ворота</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</div>
+
+<style>
+    .div {
+            width: 100%;
+            height: 100vh;
+            background-color: #0d9d11;
+    }
+</style>
+
+
+</html>

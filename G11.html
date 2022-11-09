@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Forest</title>
+</head>
+
+<audio id="divAudio" controls>
+    <source src="media/ambient/magic+steps.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var vAudio = document.getElementById("divAudio");
+    var hasInit = false;
+    function playMusic()
+    {
+      if(!hasInit)
+      {
+        hasInit = true;
+        vAudio.play();
+      }
+    }
+  </script>
+
+<div class="div" onmousemove="playMusic()">
+
+<body>
+    
+
+
+    <table width="1350" height="700" border="1" align="center" bgcolor="#38b503">
+        <tr height="100">
+            <td colspan="7" class="caption" align="center" colspan="2">
+                <h2>Загадочный цветок</h2>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="4" class="media">
+                <p align="center">
+                    <img src="media/images/G10.png" alt="Ошибка загрузки" width="720" height="360">
+                </p>
+            </td>
+            <td class="text" colspan="3" rowspan="2">
+                Вы заходите на тёмную тропинку. Сбоку от дороги, излучая магический свет, растёт цветок удивительной красоты.<br>
+                Цветок источает невероятно приятный аромат, который так и манит приблизиться и вдохнуть его полной грудью...
+            </td>
+        </tr>
+        <tr align="center">
+            <td> 
+                <a href="K12.html">Пройти мимо</a>
+            </td>
+            <td> 
+                <a href="J7.html">Изучить цветок</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</div>
+
+<style>
+    .div {
+            width: 100%;
+            height: 100vh;
+            background-color: #0d9d11;
+    }
+</style>
+
+
+</html>

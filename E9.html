@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wild Forest</title>
+</head>
+
+<audio id="divAudio" controls>
+    <source src="media/ambient/forest+gold.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var vAudio = document.getElementById("divAudio");
+    var hasInit = false;
+    function playMusic()
+    {
+      if(!hasInit)
+      {
+        hasInit = true;
+        vAudio.play();
+      }
+    }
+  </script>
+
+<div class="div" onmousemove="playMusic()">
+
+<body>
+    
+
+
+    <table width="1350" height="700" border="1" align="center" bgcolor="#38b503">
+        <tr height="100">
+            <td colspan="4" class="caption" align="center" colspan="2">
+                <h2>Поляна с сокровищами</h2>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td colspan="3" class="media">
+                <p align="center">
+                    <img src="media/images/E9.png" alt="Ошибка загрузки" width="720" height="360">
+                </p>
+            </td>
+            <td class="text" rowspan="2">
+                <p>
+                   Идя по тропинке, вы выходите к небольшой поляне, окружённой деревьями.
+                   На поляне стоит сундук, полный золотых монет и драгоценных камней. Блеск драгоценностей так и манит вас...
+                   Неподалёку от сундука стоят рыцарские доспехи - кажется, пустые. На них висит золотой амулет с большим рубином.  
+                </p>
+            </td>
+        </tr>
+        <tr align="center">
+            <td> 
+                <a href="F8.html">Взять драгоценности из сундука</a>
+            </td>
+
+            <td>
+                <a href="G10.html">Взять амулет</a>
+            </td>
+
+            <td> 
+                <a href="G11.html">Пройти мимо</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</div>
+
+<style>
+    .div {
+            width: 100%;
+            height: 100vh;
+            background-color: #0d9d11;
+    }
+</style>
+
+
+</html>
